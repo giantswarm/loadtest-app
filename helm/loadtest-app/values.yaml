@@ -9,6 +9,9 @@ image:
   tag: latest
   pullPolicy: Always
 
+userID: 1000
+groupID: 1000
+
 service:
   port: 8080
 

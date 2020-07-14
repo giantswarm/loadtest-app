@@ -40,6 +40,9 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
             {{- toYaml .Values.env | nindent 12 }}
+      securityContext:
+        runAsGroup: {{ .Values.userID }}
+        runAsUser: {{ .Values.groupID }}
 {{- if .Values.nodeAffinity.enabled }}
       nodeSelector:
         {{- toYaml .Values.nodeAffinity.selector | nindent 8 }}
