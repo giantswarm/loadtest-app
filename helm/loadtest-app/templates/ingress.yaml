@@ -32,21 +32,22 @@ spec:
     - host: {{ . | quote }}
       http:
         paths:
-	{{- range $ingressPaths }}
+        {{- range $ingressPaths }}
           - path: {{ . }}
             backend:
               serviceName: {{ $fullName }}
               servicePort: http
-	{{- end }}
+        {{- end }}
   {{- end }}
   {{- else }}
     - host: {{ $fullName }}.{{ .Values.baseDomain }}
       http:
         paths:
-  {{- range $ingressPaths }}
+        {{- range $ingressPaths }}
         - path: {{ . }}
           backend:
             serviceName: {{ $fullName }}
             servicePort: http
+        {{- end }}
   {{- end }}
 {{- end }}
