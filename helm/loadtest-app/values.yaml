@@ -21,8 +21,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
   paths:
     - "/"
-  hosts:
-    - testapp.ss863.k8s.ginger.eu-west-1.aws.gigantic.io
+  hosts: {}
 
 resources:
   limits:

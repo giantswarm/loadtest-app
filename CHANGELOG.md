@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Use cluster based domain in Ingress default hostname.
+
 ## [0.1.3] - 2020-07-14
 
 ### Changed
