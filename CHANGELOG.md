@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Use `networking.k8s.io/v1beta1` instead of `extensions/v1beta1` Ingress API.
+
 ## [0.2.0] - 2020-08-11
 
 ### Changed
