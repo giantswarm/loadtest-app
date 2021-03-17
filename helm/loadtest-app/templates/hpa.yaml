@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/name: {{ .Values.name }}
     helm.sh/chart: {{ include "testapp-chart.chart" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Values.managed_by }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
