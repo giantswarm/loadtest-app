@@ -1,5 +1,3 @@
-managed-by: giantswarm
-
 name: loadtest-app
 
 replicaCount: 1
