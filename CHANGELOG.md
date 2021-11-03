@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Use `networking.k8s.io/v1` instead of `networking.k8s.io/v1beta1` Ingress API.
+- Add `ingress.ingressClassName` field to values.
+
 ## [0.3.0] - 2020-10-08
 
 ### Changed
