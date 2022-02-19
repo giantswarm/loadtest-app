@@ -36,7 +36,7 @@ spec:
         {{- range $ingressPaths }}
           - path: {{ . }}
             pathPrefix: /
-            pathType: "prefix"
+            pathType: "Prefix"
             backend:
               service:
                 name: {{ $fullName }}
