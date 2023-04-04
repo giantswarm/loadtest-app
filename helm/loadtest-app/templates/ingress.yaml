@@ -35,8 +35,8 @@ spec:
         paths:
         {{- range $ingressPaths }}
           - path: {{ . }}
+            pathType: Prefix
             pathPrefix: /
-            pathType: "Prefix"
             backend:
               service:
                 name: {{ $fullName }}
@@ -49,13 +49,14 @@ spec:
       http:
         paths:
         {{- range $ingressPaths }}
-        - path: {{ . }}
-          pathPrefix: /
-          backend:
-            service:
-              name: {{ $fullName }}
-              port:
-                name: http
+          - path: {{ . }}
+            pathType: Prefix
+            pathPrefix: /
+            backend:
+              service:
+                name: {{ $fullName }}
+                port:
+                  name: http
         {{- end }}
   {{- end }}
 {{- end }}
