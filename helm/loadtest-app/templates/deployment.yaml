@@ -41,11 +41,11 @@ spec:
           env:
             {{- toYaml .Values.env | nindent 12 }}
           securityContext:
-          allowPrivilegeEscalation: false
-          capabilities:
-            drop:
-            - ALL
-          readOnlyRootFilesystem: true
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+              - ALL
+            readOnlyRootFilesystem: true
       securityContext:
         runAsGroup: {{ .Values.userID }}
         runAsUser: {{ .Values.groupID }}
