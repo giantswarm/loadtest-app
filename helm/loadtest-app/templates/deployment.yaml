@@ -40,9 +40,18 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
             {{- toYaml .Values.env | nindent 12 }}
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+              - ALL
+            readOnlyRootFilesystem: true
       securityContext:
         runAsGroup: {{ .Values.userID }}
         runAsUser: {{ .Values.groupID }}
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
 {{- if .Values.nodeAffinity.enabled }}
       nodeSelector:
         {{- toYaml .Values.nodeAffinity.selector | nindent 8 }}
