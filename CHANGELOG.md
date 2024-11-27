@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Pin container image to [0c7c3e825277](https://hub.docker.com/layers/stormforger/testapp/latest/images/sha256-0c7c3e825277bbb1b7f1ba56bdc1fda8e08042a94169bb75966f244e94e46300?context=explore)
+
 ## [0.6.0] - 2024-01-16
 
 ### Changed
