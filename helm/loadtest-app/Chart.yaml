@@ -3,4 +3,4 @@ appVersion: "0.0.1"
 description: A Helm chart for Load Test App
 home: https://github.com/giantswarm/loadtest-app
 name: loadtest-app
-version: [[ .Version ]]
+version: 0.6.0

@@ -1,0 +1,7 @@
+replace-chart-version-with-git: true
+generate-metadata: true
+chart-dir: ./helm/loadtest-app
+destination: ./build
+# CI overwrites this, check .circleci/config.yaml
+catalog-base-url: https://giantswarm.github.io/default-catalog/
+disable-giantswarm-helm-validator: true

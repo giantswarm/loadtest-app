@@ -4,7 +4,7 @@ replicaCount: 1
 
 image:
   repository: stormforger/testapp
-  tag: latest
+  tag: "latest@sha256:0c7c3e825277bbb1b7f1ba56bdc1fda8e08042a94169bb75966f244e94e46300"
   pullPolicy: Always
 
 userID: 1000
