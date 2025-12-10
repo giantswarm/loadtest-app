@@ -4,3 +4,7 @@ description: A Helm chart for Load Test App
 home: https://github.com/giantswarm/loadtest-app
 name: loadtest-app
 version: 0.6.0
+annotations:
+  io.giantswarm.application.team: cabbage
+  io.giantswarm.application.audience: giantswarm
+  io.giantswarm.application.managed: false
